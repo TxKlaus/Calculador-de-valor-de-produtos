@@ -14,33 +14,57 @@
 </head>
 <body>
     <div class="container">
-        <h1>Meu Carrinho</h1>
-        <div class="product">
+        <h1>Calculador de Preços</h1>
+        <div id="product" class="product">
             
             <img class="image" src="assets/images/burguer.png" alt="">
             <h1 class="product_title">Smash burguer</h1>
             <div class="price">
                 <p class="product_value">R$16.99</p>
-                <button type="button" class="product-minus">-</button>
-                <p class="product_number">1</p>
-                <button type="button" class="product-plus">+</button>
+                <button type="button" id="buttonDecrement" data-value="-16.99"  class="product-minus">-</button>
+                <p id="qtd" class="product_number">0</p>
+                <button type="button" id="buttonIncrement" data-value="+16.99" class="product-plus">+</button>
             </div>
             
         </div>
-        <div class="product">
+        <div id="product">
             
             <img class="image" src="assets/images/burguer2.png" alt="">
             <h1 class="product_title">Smash Bacon</h1>
             <div class="price">
-                <p class="product_value">R$18.99</p>
-                <button type="button" class="product-minus">-</button>
-                <p class="product_number">1</p>
-                <button type="button" class="product-plus">+</button>
+                <p class="product_value"  >R$18.99</p>
+                <button type="button" id="buttonDecrement" data-value="-18.99" class="product-minus">-</button>
+                <p id="qtd" class="product_number">0</p>
+                <button type="button" id="buttonIncrement" data-value="+18.99" class="product-plus">+</button>
+            </div>
+            
+        </div>
+        <div id="product">
+            
+            <img class="image" src="assets/images/burguer3.png" alt="">
+            <h1 class="product_title">Smash Calabresa</h1>
+            <div class="price">
+                <p class="product_value"  >R$24.99</p>
+                <button type="button" id="buttonDecrement" data-value="-24.99" class="product-minus">-</button>
+                <p id="qtd" class="product_number">0</p>
+                <button type="button" id="buttonIncrement" data-value="+24.99" class="product-plus">+</button>
+            </div>
+            
+        </div>
+        <div id="product">
+            
+            <img class="image" src="assets/images/burguer4.png" alt="">
+            <h1 class="product_title">Duplo Bacon</h1>
+            <div class="price">
+                <p class="product_value"  >R$29.99</p>
+                <button type="button" id="buttonDecrement" data-value="-29.99" class="product-minus">-</button>
+                <p id="qtd" class="product_number">0</p>
+                <button type="button" id="buttonIncrement" data-value="+29.99" class="product-plus">+</button>
             </div>
             
         </div>
         <div class="profit">
-            <p class="full-profit">Valor total: R$16.99</p>
+            <p id="ValueQuantity" class="full-profit">Nenhum Valor</p>
             <button class="profit-btn"><i  class="bi bi-cart-check"></i>Finalizar</button>
         </div>
     </div>
